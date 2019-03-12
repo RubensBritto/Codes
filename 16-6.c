@@ -1,11 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main ()
 {
 	int num, resto,quociente,i,j = 0,v[j];
 	scanf("%d",&num);
 	
-	while(quociente != 0)
+	while(quociente != 1)
 	{
 		quociente = num / 2;
 		resto = num % 2;
@@ -15,9 +15,9 @@ int main ()
 		j++;
 	//printf("%d\n",resto);
 	}
-	for(i = j - 1; i >=0 ; i--)
+	for(i = j; i >=0 ; i--)
 	{
-		printf("%d\n",v[i]); //falta so o print.
+		printf("%d\n",v[i]);
 	}
 	return 0;
 }
