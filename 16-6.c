@@ -15,7 +15,7 @@ int main ()
 		j++;
 	//printf("%d\n",resto);
 	}
-	for(i = j; i >= ; i--)
+	for(i = j - 1; i >=0 ; i--)
 	{
 		printf("%d\n",v[i]); //falta so o print.
 	}
