@@ -1,23 +1,27 @@
 #include<stdio.h>
 
-int main ()
+int main()
 {
-	int num, resto,quociente,i,j = 0,v[j];
+	int num, resto, i, j = 0, ver[j];
+	printf("Digite o numero que deseja converter\n");
 	scanf("%d",&num);
-	
-	while(quociente != 0)
+	while(num != 0)
 	{
-		quociente = num / 2;
-		resto = num % 2;
-
-		num = quociente;
-		v[j] = resto;
-		j++;
-	//printf("%d\n",resto);
+		if(num % 2 == 0)
+		{
+			ver[j] = 0;
+			j++;
+			num = num /2;
+		}
+		else
+		{
+			ver[j] = 1;
+			j++;
+			num = num /2;
+		}
 	}
-	for(i = j; i >= ; i--)
+	for(i = j-1; i >= 0; i--)
 	{
-		printf("%d\n",v[i]); //falta so o print.
+		printf("%d ",ver[i]);
 	}
-	return 0;
 }
